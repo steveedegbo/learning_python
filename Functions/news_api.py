@@ -58,7 +58,7 @@ first_item_in_forecast_container = forecast_container[0]
 
 # SOLVING WITH FUNCTIONS
 
-def times():
+def weather():
     for forecast in forecast_container:
         time = forecast['dt_txt']
         temperature = forecast['main']['temp']
@@ -67,33 +67,6 @@ def times():
         clouds = forecast['weather']
         cloud_description = clouds[0]['description']
         print(time,temperature,wind,pressure,cloud_description)
-        # return time
-        
 
-# def temperatures():
-#     for forecast in forecast_container:
-#         temperature = forecast['main']['temp']
-#         print(temperature)
-
-# def winds():
-#     for forecast in forecast_container:
-#         wind = forecast['wind']['speed']
-#         print(wind)
-
-# def pressures():
-#     for forecast in forecast_container:
-#         pressure = forecast['main']['pressure']
-#         print(pressure)
-
-# def cloud():
-#     for forecast in forecast_container:
-#         clouds = forecast['weather']
-#         cloud_description = clouds[0]['description']
-#         print(cloud_description)
-
-times()
-# temperatures()
-# winds()
-# pressures()
-# cloud()
+weather()
 
