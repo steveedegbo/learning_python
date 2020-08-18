@@ -1,0 +1,6 @@
+atha_name = student_scores[0][0] #position 0 in master list, position 0 in own list
+print(atha_name)
+atha_score = student_scores[0][1][0][1] #position 0 in master list, own parent list in position 1, position 0 in main list, position 1 in own list
+print(atha_score)
+atha_hobby = student_scores[0][2][0][0] #position 0 in main list, own parent list in position 2, position 0 in mainlist, position 0 in own list
+print(atha_hobby) 
